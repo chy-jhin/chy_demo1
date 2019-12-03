@@ -1,12 +1,12 @@
 <template>
 <div>
-<ul>
+<ul id="more">
     <li v-for="(item,index) in parfont" :key="index">
         <i class="iconfont" :class="item.className"></i>
         <span>{{item.spanName}}</span>
     </li>
 </ul>
-<div class="btn" @click="put"><i></i><span>展开</span></div>
+<div id="btn" @click="put"><i></i><span class="show">v展开</span> <span>^收起</span> </div>
 </div>
 
 </template>
@@ -19,18 +19,31 @@ export default {
     ],
     data(){
         return{
-
+          name:""
         }
     },
     methods: {
         put(){
-            console.log(document.querySelectorAll("ul"));
+            var ul = document.getElementById("more");
+            var span = document.getElementById("btn").childNodes;
+            if(span[1].getAttribute("class") == "show"){
+              span[1].setAttribute("class","");
+              span[3].setAttribute("class","show");
+              ul.style.height = "70px";
+            }else{
+              span[3].setAttribute("class","");
+              span[1].setAttribute("class","show");
+              ul.style.height = "";
+            }
         }
     },
 }
 </script>
 
 <style scoped>
+  .show{
+    display:none;
+  }
 ul,li{
     list-style: none;
     padding: 0 0;
@@ -54,17 +67,18 @@ ul{
     background-color: white;
     /* height: 70px; */
     overflow: hidden;
+    transition: 0.5s all ease;
 }
 li{
     width: 20%;
     margin:10px 2.2%;
     border-right: 1px gainsboro solid;
 }
-.btn{
+#btn{
     background-color: rgb(243, 243, 243);
     padding: 5px 0;
 }
-.btn span{
+#btn span{
     font-size: 18px;
 }
 </style>

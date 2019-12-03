@@ -1,23 +1,23 @@
 <template>
 <div>
     <Swiper :parimg="imglist"></Swiper>
-    <font :parfont="fontlist"></font>
+    <more :parfont="fontlist"></more>
 </div>
 </template>
 
 <script>
 import Swiper from '../tabber/swiper'
-import font from '../tabber/more.vue'
+import more from '../tabber/more.vue'
 export default {
     data(){
         return {
-    imglist:[
+    "imglist":[
         {id:0,img:'../../static/1.jpg'},
         {id:1,img:'../../static/2.jpg'},
         {id:2,img:'../../static/3.jpg'},
         {id:3,img:'../../static/4.jpg'},
       ],
-      fontlist:[
+      "fontlist":[
           {
               id:0,className:'icon-shujumofang',spanName:"爆料站"
           },
@@ -51,7 +51,7 @@ export default {
     },
     components:{
         Swiper,
-        font,
+        more,
     }
 }
 </script>
