@@ -1,0 +1,107 @@
+{
+  "id": "1513012",
+  "name": "myfont",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2161",
+      "name": "收藏夹",
+      "font_class": "shoucangjia",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "2167",
+      "name": "双鱼座",
+      "font_class": "shuangyuzuo",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "2175",
+      "name": "双子座",
+      "font_class": "shuangzizuo",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "2177",
+      "name": "牡羊座",
+      "font_class": "muyangzuo",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "2189",
+      "name": "文章",
+      "font_class": "wenzhang",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "2190",
+      "name": "图片",
+      "font_class": "tupian",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "2194",
+      "name": "摄影旅行",
+      "font_class": "sheyinglvxing",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "2374",
+      "name": "文章",
+      "font_class": "wenzhang1",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "2375",
+      "name": "店铺",
+      "font_class": "dianpu",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "2376",
+      "name": "图片",
+      "font_class": "tupian1",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "2843",
+      "name": "量子统计",
+      "font_class": "liangzitongji",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "2845",
+      "name": "数据魔方",
+      "font_class": "shujumofang",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "2852",
+      "name": "淘宝星店",
+      "font_class": "taobaoxingdian",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "135163",
+      "name": "住iocn02",
+      "font_class": "zhuiocn02",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    }
+  ]
+}
