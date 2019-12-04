@@ -3,6 +3,7 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
+const webpack = require("webpack")
 
 function resolve(dir) {
   return path.join(__dirname, '..', dir)
@@ -18,7 +19,6 @@ const createLintingRule = () => ({
     emitWarning: !config.dev.showEslintErrorsInOverlay
   }
 })
-
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
@@ -88,5 +88,25 @@ module.exports = {
     net: 'empty',
     tls: 'empty',
     child_process: 'empty'
-  }
+  },
+    node: {
+      // prevent webpack from injecting useless setImmediate polyfill because Vue
+      // source contains it (although only uses it if it's native).
+      setImmediate: false,
+      // prevent webpack from injecting mocks to Node native modules
+      // that does not make sense for the client
+      dgram: 'empty',
+      fs: 'empty',
+      net: 'empty',
+      tls: 'empty',
+      child_process: 'empty'
+    },
+    plugins: [
+      new webpack.optimize.CommonsChunkPlugin('common.js'),
+      new webpack.ProvidePlugin({
+        jQuery: "jquery",
+        $: "jquery"
+      })
+    ]
+
 }

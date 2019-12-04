@@ -11,6 +11,7 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'vue-awesome-swiper/node_modules/swiper'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import $ from 'jquery'
 Vue.use(VueAxios, axios)
 Vue.use(VueAwesomeSwiper)
 Vue.use(MintUI)
